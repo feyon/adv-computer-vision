@@ -56,47 +56,47 @@ Implementasi proyek menghasilkan serangkaian output visual dan tekstual pada set
 Citra berhasil dimuat menggunakan `cv2.imread()`. Fungsi ini memvalidasi keberadaan file sebelum melanjutkan. Metadata dan dimensi citra berhasil diekstraksi dan ditampilkan di konsol, memenuhi persyaratan penggunaan `Tuple` untuk dimensi dan `Dictionary` untuk metadata. Citra asli (dalam format BGR OpenCV) dikonversi ke RGB dan ditampilkan dengan benar menggunakan Matplotlib.
 
 Citra Asli
-(https://github.com/feyon/adv-computer-vision/blob/main/output/Citra%20Asli%20(BGR%20-%3E%20RGB).png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/Citra%20Asli%20(BGR%20-%3E%20RGB).png)
 
 ### 3.2 Langkah 2: Konversi Grayscale
 Citra asli yang memiliki 3 kanal (BGR) berhasil dikonversi menjadi citra 1 kanal (skala keabuan) menggunakan fungsi `cv2.cvtColor()` dengan flag `COLOR_BGR2GRAY`. Hasilnya adalah representasi intensitas citra yang diperlukan untuk langkah-langkah selanjutnya.
 
 Citra Grayscale
-(https://github.com/feyon/adv-computer-vision/blob/main/output/Citra%20Grayscale.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/Citra%20Grayscale.png)
 
 ### 3.3 Langkah 3: Analisis Histogram dan Statistik
 Histogram intensitas untuk citra grayscale berhasil dihitung menggunakan `cv2.calcHist()`. Plot histogram yang dihasilkan memberikan visualisasi yang jelas tentang distribusi frekuensi nilai piksel. Selain itu, statistik deskriptif (min, max, mean, std_dev) dihitung menggunakan NumPy dan disajikan dalam format `List`, memberikan ringkasan kuantitatif dari properti citra.
 
 Histogram Citra Grayscale
-(https://github.com/feyon/adv-computer-vision/blob/main/output/histogram-citra-grayscale.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/histogram-citra-grayscale.png)
 
 ### 3.4 Langkah 4: Segmentasi Biner (Thresholding)
 Dua metode segmentasi berbasis ambang batas (thresholding) berhasil diterapkan:
 **Simple Thresholding**: Menggunakan nilai ambang batas statis (127), citra dibagi secara kaku menjadi piksel hitam (0) dan putih (255).
 
 Simple Thresholding dengan ambang batas statis (127)
-(https://github.com/feyon/adv-computer-vision/blob/main/output/simple-threshold-ambang-127.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/simple-threshold-ambang-127.png)
 
 ### 3.5 Langkah 5: Transformasi Geometri
 Operasi manipulasi spasial pada citra asli (berwarna) berhasil dilakukan:
 * **Flipping**: Citra dicerminkan secara horizontal (sumbu Y) menggunakan `cv2.flip()`.
 
 Flip Horizontal
-(https://github.com/feyon/adv-computer-vision/blob/main/output/manipulasi-flip-horizontal.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/manipulasi-flip-horizontal.png)
 
 * **Rotasi**: Citra diputar 45 derajat mengelilingi titik pusatnya menggunakan matriks transformasi afinitas yang dihasilkan oleh `cv2.getRotationMatrix2D()` dan diterapkan dengan `cv2.warpAffine()`.
 
 Rotasi pada 45 derajat
-(https://github.com/feyon/adv-computer-vision/blob/main/output/manipulasi-rotasi-45-derajat.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/manipulasi-rotasi-45-derajat.png)
 
 ### 3.6 Langkah 6: Ringkasan Visual
 Sebagai langkah akhir, fungsi `buat_ringkasan_visual()` berhasil mengagregasi semua keluaran visual utama ke dalam satu gambar komposit menggunakan `plt.subplots()`. Plot ringkasan ini (grid 2x3) menyajikan perbandingan berdampingan dari Citra Asli, Grayscale, Histogram, Thresholding Otsu, dan Rotasi, memberikan gambaran umum yang komprehensif dari seluruh alur kerja proyek.
 
 Ringkasan Output
-(https://github.com/feyon/adv-computer-vision/blob/main/output/ringkasan-project-pengolahan-citra-digital.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/ringkasan-project-pengolahan-citra-digital.png)
 
 Script Log
-(https://github.com/feyon/adv-computer-vision/blob/main/output/script_log.png)
+!(https://github.com/feyon/adv-computer-vision/blob/main/output/script_log.png)
 
 ---
 
