@@ -24,25 +24,9 @@ Skrip ini akan mengambil sebuah gambar input dan menghasilkan satu plot ringkasa
 
 ---
 
-##Teknologi yang Digunakan
+## Library yang dibutuhkan untuk menjalankan program ini
 
 * [Python](https://www.python.org/)
 * [OpenCV (cv2)](https://opencv.org/) - Untuk fungsi inti pemrosesan citra.
 * [NumPy](https://numpy.org/) - Untuk komputasi numerik dan representasi matriks citra.
 * [Matplotlib](https://matplotlib.org/) - Untuk visualisasi data dan menampilkan citra.
-
----
-
-## Instalasi dan Menjalankan Proyek
-
-### 1. Prasyarat
-
-* Python 3.7 atau lebih baru
-* `pip` (Python package installer)
-
-### 2. Dapatkan Proyek
-
-Salin (clone) repositori ini ke mesin lokal Anda:
-```bash
-git clone [https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USER_ANDA/NAMA_REPO_ANDA.git)
-cd NAMA_REPO_ANDA
