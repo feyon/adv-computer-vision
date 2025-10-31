@@ -92,7 +92,11 @@ Rotasi pada 45 derajat
 ### 3.6 Langkah 6: Ringkasan Visual
 Sebagai langkah akhir, fungsi `buat_ringkasan_visual()` berhasil mengagregasi semua keluaran visual utama ke dalam satu gambar komposit menggunakan `plt.subplots()`. Plot ringkasan ini (grid 2x3) menyajikan perbandingan berdampingan dari Citra Asli, Grayscale, Histogram, Thresholding Otsu, dan Rotasi, memberikan gambaran umum yang komprehensif dari seluruh alur kerja proyek.
 
+Ringkasan Output
 (https://github.com/feyon/adv-computer-vision/blob/main/output/ringkasan-project-pengolahan-citra-digital.png)
+
+Script Log
+(https://github.com/feyon/adv-computer-vision/blob/main/output/script_log.png)
 
 ---
 
