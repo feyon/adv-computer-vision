@@ -1,7 +1,7 @@
 # Advanced Computer Vision
 > Sebuah pembelajaran dari Artificial Intelligence yang memungkinkan komputer memahami abstraksi visual
 
-#
+![](https://github.com/feyon/adv-computer-vision/blob/main/output/eye.webp)
 
 Pernah bertanya-tanya bagaimana ponsel Anda bisa secara ajaib menandai (tag) wajah teman Anda di foto, atau bagaimana mobil otonom bisa “melihat” pejalan kaki di depannya.
 Itulah keajaiban di balik **Visi Komputer (Computer Vision)**, salah satu cabang paling revolusioner dari **Kecerdasan Buatan (AI)**.
@@ -23,7 +23,7 @@ Untuk gambar *grayscale* (hitam-putih), ini sederhana. Setiap piksel hanya menyi
 
 Nah, untuk gambar **berwarna**, segalanya jadi sedikit lebih menarik. Komputer menggunakan apa yang kita sebut model **RGB**. Alih-alih satu angka, setiap piksel kini membutuhkan **tiga angka**: satu untuk intensitas Merah (Red), satu untuk Hijau (Green), dan satu lagi untuk Biru (Blue). Ini seperti menumpuk tiga lembar “kertas grafik” 2D tadi di atas satu sama lain, yang secara efektif menjadikannya **matriks 3D** (Tinggi x Lebar x 3 Kanal).
 
-#
+![](https://github.com/feyon/adv-computer-vision/blob/main/output/pixel-matrix.webp))
 
 > “Melihat” seperti mesin! Saat kita melihat foto kamera atau stroberi, komputer hanya melihat angka-angka dalam sebuah grid.
 
